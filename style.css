@@ -1,0 +1,310 @@
+/* Цвета текста:
+Заголовки - #007765
+ССылки, текст 2 блока - #FFFFFF
+Основной текст - #000000
+
+Цвета фона:
+Шапка: #007765
+Проблема: #EEEEEE
+Введение: #FFFFFF
+Команда: #EEEEEE
+Футер: #333333
+
+Шрифты:
+font-family: Roboto;
+font-style: normal; italic
+font-weight: 500; normal
+font-size: 72px; 64px; 32px;
+*/
+
+
+/* Основная настройка сайта */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовки */
+
+h1,h2,h3,h4,h5,h6 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+/* пустой блок под шапку сайта*/
+
+.empty {
+  height: 89px;
+}
+/*Голова сайта, фиксированое положение без пустого блока*/
+
+.header {
+  background-color: #007765;
+  width: 100%;
+  position: fixed;
+  top:0;
+  margin: auto;
+}
+
+.nav_container {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1219px;
+  margin: auto;
+}
+
+.logo_nav {
+  padding-top: 20px;
+  padding-left: 55px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  width: 184px;
+  height: 45px;
+}
+
+.bar_menu {
+  color: white;
+  padding-right: 55px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+/* Название сайта и картинка */
+
+.name {
+  background: url("images/1.png");
+  background-size: cover;
+  height: 405px;
+  display: flex;
+  justify-content: center;
+}
+
+.name_container {
+  width: 1219px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Проблема */
+
+.problem {
+  background: #EEEEEE;
+  background-size: cover;
+  height: 719px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.problem_container {
+  width: 1219px;
+  margin: auto;
+}
+
+.problem_h2 {
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.problem_h2 h2 {
+  color: #007765;
+}
+
+.problem_text {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+/* Цитата какая то */
+
+.blockquote {
+  background: url("images/2.png");
+  background-size: cover;
+  height: 483px;
+  display: flex;
+  justify-content: center;
+}
+
+.blockquote_container {
+  width: 1219px;
+  margin: auto;
+  text-align: center;
+}
+
+.blockquote_container blockquote {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  color: white;
+  padding-left: 163px;
+  padding-right: 163px;
+}
+
+/* Введение в проблематику */
+
+.intro {
+  background: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.intro_container {
+  width: 1219px;
+  margin: auto;
+}
+
+.intro_h2 {
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.intro_h2 h2 {
+  color: #007765;
+}
+
+.intro_logo_text {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.logo_intro {
+  display: flex;
+  align-items: center;
+}
+
+.logo_intro img + .intro_img {
+  margin-left: 0.5em;
+}
+
+.intro_text_other {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 92px;
+}
+
+/* Остановился на выравнивании картинки и текста во введении в проблему, нашел сайт там вроде сказано, надо проверить*/
+
+/* Команда */
+
+.team {
+  background: #eeeeee;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.team_container {
+  width: 1219px;
+  margin: 0 auto;
+}
+
+.team_h2 {
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-bottom: 30px;
+}
+
+.team_h2 h2 {
+  color: #007765;
+  text-align: center;
+}
+
+.member {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_flex {
+  padding-left: 55px;
+  padding-right: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+
+.member h3 {
+  color: #007765;
+  font-size: 24px;
+  margin: 0;
+}
+
+.member p {
+  font-style: italic;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.member img {
+  margin-bottom: 6px;
+}
+
+/* Подвал */
+
+.footer {
+  background: #333333;
+  background-size: cover;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_container {
+  width: 1219px;
+  margin: auto;
+  text-align: center;
+}
